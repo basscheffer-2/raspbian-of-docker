@@ -6,7 +6,7 @@ RUN sudo apt-get clean && sudo apt-get update && sudo apt-get upgrade \
 
 RUN adduser pi --disabled-password  && adduser pi sudo
 
-COPY of_v0.9.8_linuxarmv6l_release.tar.gz /tmp/
+RUN cd /tmp/ && wget http://openframeworks.cc/versions/v0.9.8/of_v0.9.8_linuxarmv6l_release.tar.gz
 
 # openframeworks
 RUN cd /home/pi \
